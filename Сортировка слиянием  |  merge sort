@@ -1,0 +1,36 @@
+# Функция merge_two_list объединяет два списка.    Слияние списков. Метод двух указателей Python
+def merge_two_list(a, b):
+    c = []
+    i = j = 0
+    while i < len(a) and j < len(b):
+        if a[i] < b[j]:
+            c.append(a[i])
+            i += 1
+        else:
+            c.append(b[j])
+            j += 1
+            
+    if i < len(a):
+        c += a[i:]
+        i += 1
+        
+    if j < len(b):
+        c += b[j:]
+        j += 1
+            
+    return c
+
+
+# Функция merge_sort выполняет сортировку
+def merge_sort(s):
+    if len(s) == 1:
+        return s
+    middle = len(s) // 2
+    left = merge_sort(s[:middle])
+    right = merge_sort(s[middle:]) 
+    return merge_two_list(left, right)
+    
+    
+s = list(map(int, input().split())) 
+a = merge_sort(s)
+print(a)
