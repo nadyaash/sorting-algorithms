@@ -10,3 +10,4 @@ _________________
 полезные ссылки:<br>
 https://ru.algorithmica.org/cs/sorting/   <br>
 плей-лист по алгоритмам от Балакирева https://www.youtube.com/playlist?list=PLA0M1Bcd0w8yF0PO0eJ9v8VlsYEowmsnJ
+визуализация сортировок https://visualgo.net/en/sorting
